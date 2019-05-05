@@ -20,13 +20,13 @@ void main() async {
   print('This is a future, not a value: ' + year.toString());//displays second
   print('This is the value: ' + (await year).toString());//displays third
   
-  // await blocks until future is returned
-  await sendToFuture(3205, 'Sylvia Tilly');
+  // // await blocks until future is returned
+  // await sendToFuture(3205, 'Sylvia Tilly');
   
-  print('>> Send Tilly before showing this message');
+  // print('>> Send Tilly before showing this message');
   
-  whatYearIsIt().then((year) {
-    print('>>> $year');
-  });
-  print('The year is...');
+  // whatYearIsIt().then((year) {
+  //   print('>>> $year');
+  // });
+  // print('The year is...');
 }
